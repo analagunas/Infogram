@@ -10,34 +10,52 @@
   </head>
 <body>
 <!-- Image and text -->
-<nav class="navbar navbar-expand-lg ">
+<nav class="navbar navbar-expand-lg bg-dark">
   <a href="{% url 'index' %}" class="brand-logo"><img src="static/images/infogram.png" alt=""> </a>
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
     </ul>
     <ul class="navbar-nav my-2 my-lg-0">
      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'login' %}">Iniciar Sesión <span class="sr-only"></span></a>
+        <a class="nav-link text-white" href="{% url 'login' %}">Iniciar Sesión <span class="sr-only"></span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'registro' %}">Registrarse</a>
+        <a class="nav-link text-white" href="{% url 'registro' %}">Registrarse</a>
       </li>
     </ul>
     </ul>
   </div>
 </nav>
-
+<main>
 {# Aquí se cargan los demás html's #}
 {% block content %} {% endblock %}
-
-<footer class="page-footer">
+</main>
+<footer class="page-footer text-center bg-dark">
          <div class="footer-copyright">
            <div class="container">
                <h5 class="text-white">Ana Paola Lakes Parra y Octavio Martínez Osorio</h5>
                <h6 class="text-white">© 2020 Copyright Text</h6>
-           </div>
-         </div>
+               <div class="col l4 offset-l2 s12">
+                <h5 class="text-white">Links para nuestras redes sociales</h5>
+                <div class="col-12">
+                    <li><a class="text-white text-lighten-3" href="https://www.facebook.com/anapao.lagunas/">Facebook Ana Lakes</a>
+                    <img src="static/images/facebook.png" alt="" width="20px" height="20px"></li>
+              
+                   </li>
+                    <li><a class="text-white text-lighten-3" href="https://www.instagram.com/anapaolp">Instagram Ana Lakes</a>
+                    <img src="static/images/instagram.png" alt="" width="20px" height="20px">
+                    </li>
+                    <li><a class="text-white text-lighten-3" href="https://www.facebook.com/octavio.martinez.9212301">Facebook Octavio Martinez</a>
+                      <img src="static/images/facebook.png" alt="" width="20px" height="20px"></li>
+                     </li>
+                      <li><a class="text-white text-lighten-3" href="https://www.instagram.com/octaviiomtz">Instagram Octavio Martinez</a>
+                      <img src="static/images/instagram.png" alt="" width="20px" height="20px">
+                      </li>
+                </div>
+            </div>
+              </div>
+              </div>
+
 </footer>
 
 

@@ -37,7 +37,7 @@
   pointer-events: auto;
 }
 
-footer {
+#footer{
   margin-top: 2rem;
   background-color: crimson;
   font-family: Helvetica;
@@ -45,7 +45,7 @@ footer {
   height: 100px;
 }
 
-nav{
+#nav{
 
     margin-top: 2rem;
     background-color: #fa9191;
@@ -66,4 +66,9 @@ nav{
 
 .form-section{
   padding: 2rem;
+}
+
+body{
+  align-content: center;
+  
 }
